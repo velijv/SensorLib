@@ -979,7 +979,7 @@ void check_bhy2_api(unsigned int line, const char *func, int8_t val)
     int i = 3;
     while (i--) {
 
-        Serial.printf("BHI260 API failed at line %u. The function %s returned error code %d. %s\r\n",
+        ESP_LOGE("BHI260", "API failed at line %u. The function %s returned error code %d. %s",
                       line,
                       func,
                       val,

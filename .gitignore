@@ -9,3 +9,4 @@ assets
 build
 *.old
 sdkconfig
+.DS_Store
